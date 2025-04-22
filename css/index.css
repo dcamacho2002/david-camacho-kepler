@@ -27,7 +27,6 @@ h2 {
 }
 
 #Experience ul li {
-    background-color: mediumblue;
     width: 500px;
     margin-bottom: 5px;
 }
@@ -36,4 +35,49 @@ h2 {
     font-weight: bold;
     font-family: "Times New Roman", serif;
     font-size: 18px;
+}
+
+.list1 {
+    background-color: mediumblue;
+    padding: 5px;
+    border: 7px solid yellow;
+    display: flex;
+}
+
+.list1 li {
+    background-color: darkblue;
+    border: 7px solid yellow;
+    height: 25px;
+    flex: 1;
+    margin: 5px;
+}
+
+.list2 {
+    background-color: mediumblue;
+    padding: 5px;
+    border: 7px solid yellow;
+    display: flex;
+}
+
+.list2 li {
+    background-color: darkblue;
+    border: 7px solid yellow;
+    height: 60px;
+    flex: 1;
+    margin: 5px;
+}
+
+.list3 {
+    background-color: mediumblue;
+    padding: 5px;
+    border: 7px solid yellow;
+    display: flex;
+}
+
+.list3 li {
+    background-color: white;
+    border: 7px solid yellow;
+    height: 25px;
+    flex: 1;
+    margin: 5px;
 }
