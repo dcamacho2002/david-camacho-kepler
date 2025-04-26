@@ -26,7 +26,12 @@ h2 {
     color: yellow;
 }
 
-#Experience {
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Experience {
     display: flex;
     gap: 50px;
 }
@@ -45,8 +50,7 @@ h2 {
 }
 
 .list1 li, .list2 li {
-    background-color: navy;
-    height: 25px;
+    padding: 5px;
     flex: 1;
     margin: 5px;
 }
@@ -61,7 +65,7 @@ h2 {
 
 .list3 li {
     background-color: navajowhite;
-    height: 25px;
+    padding: 5px;
     flex: 1;
     margin: 5px;
 }
