@@ -1,3 +1,5 @@
+/* Desktop style */
+
 body {
     background-color: steelblue;
     color: white; 
@@ -68,4 +70,43 @@ nav {
     padding: 5px;
     flex: 1;
     margin: 5px;
+}
+
+/* Tablet style */
+
+@media (max-width: 1200px) {
+    .Experience {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .list3 {
+        padding: 1px;
+        border: 2px solid gold;
+        margin: 2px;
+    }
+
+    #Connect ul li {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Mobile style */
+
+@media (max-width: 600px) {
+    .Experience {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .list3 {
+        padding: 2px;
+        flex-direction: column;
+    }
+
+    #Connect ul li {
+        font-size: 14px;
+        font-family: "Arial", serif;
+    }
 }
