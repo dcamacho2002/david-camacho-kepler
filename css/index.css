@@ -29,6 +29,7 @@ h2 {
 }
 
 nav {
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
 }
@@ -49,11 +50,11 @@ nav {
     background-color: mediumslateblue;
     padding: 5px;
     border: 4px solid gold;
+    flex: 1;
 }
 
 .list1 li, .list2 li {
     padding: 5px;
-    flex: 1;
     margin: 5px;
 }
 
@@ -75,6 +76,10 @@ nav {
 /* Tablet style */
 
 @media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
     .Experience {
         gap: 15px;
         flex-direction: column;
@@ -86,8 +91,8 @@ nav {
         margin: 2px;
     }
 
-    #Connect ul li {
-        font-size: 16px;
+    #Connect ul li, nav {
+        font-size: 20px;
         text-align: center;
     }
 }
@@ -95,6 +100,10 @@ nav {
 /* Mobile style */
 
 @media (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
     .Experience {
         gap: 5px;
         padding: 10px;
@@ -105,8 +114,9 @@ nav {
         flex-direction: column;
     }
 
-    #Connect ul li {
-        font-size: 14px;
+    #Connect ul li, nav {
+        font-size: 22px;
         font-family: "Arial", serif;
     }
+
 }
