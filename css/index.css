@@ -1,3 +1,5 @@
+/* Desktop style */
+
 body {
     background-color: steelblue;
     color: white; 
@@ -27,6 +29,7 @@ h2 {
 }
 
 nav {
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
 }
@@ -47,11 +50,11 @@ nav {
     background-color: mediumslateblue;
     padding: 5px;
     border: 4px solid gold;
+    flex: 1;
 }
 
 .list1 li, .list2 li {
     padding: 5px;
-    flex: 1;
     margin: 5px;
 }
 
@@ -68,4 +71,52 @@ nav {
     padding: 5px;
     flex: 1;
     margin: 5px;
+}
+
+/* Tablet style */
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .Experience {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .list3 {
+        padding: 1px;
+        border: 2px solid gold;
+        margin: 2px;
+    }
+
+    #Connect ul li, nav {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* Mobile style */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
+    .Experience {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .list3 {
+        padding: 2px;
+        flex-direction: column;
+    }
+
+    #Connect ul li, nav {
+        font-size: 22px;
+        font-family: "Arial", serif;
+    }
+
 }
