@@ -45,7 +45,7 @@ nav {
     font-size: 18px;
 }
 
-.list1, .list2 {
+.list1, .list2, #skills ul {
     list-style-type: none;
     background-color: mediumslateblue;
     padding: 5px;
@@ -53,7 +53,7 @@ nav {
     flex: 1;
 }
 
-.list1 li, .list2 li {
+.list1 li, .list2 li, #skills li {
     padding: 5px;
     margin: 5px;
 }
@@ -80,7 +80,7 @@ nav {
         font-size: 18px;
     }
 
-    .Experience {
+    .Experience, #skills ul li {
         gap: 15px;
         flex-direction: column;
     }
@@ -104,7 +104,7 @@ nav {
         font-size: 20px;
     }
 
-    .Experience {
+    .Experienc, #skills ul li {
         gap: 5px;
         padding: 10px;
     }
@@ -118,5 +118,4 @@ nav {
         font-size: 22px;
         font-family: "Arial", serif;
     }
-
 }
