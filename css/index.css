@@ -88,6 +88,19 @@ nav {
     margin: 5px;
 }
 
+input {
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+button {
+    padding: 10px;
+}
+
 footer {
     text-align: center;
     color: gold;
@@ -124,6 +137,14 @@ footer {
         text-align: center;
     }
 
+    input {
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        padding: 30px;
+    }
+
     footer {
         padding: 8px;
         margin-top: 10px;
@@ -156,6 +177,14 @@ footer {
     #Connect ul li, nav {
         font-size: 22px;
         font-family: "Arial", serif;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    button {
+        padding: 15px;
     }
 
     footer {
