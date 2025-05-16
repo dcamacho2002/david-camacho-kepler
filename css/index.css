@@ -88,17 +88,28 @@ nav {
     margin: 5px;
 }
 
-input {
+form {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea {
+    font-size: 16px;
     margin-bottom: 10px;
+    width: 300px;
+    background-color: antiquewhite;
 }
 
 textarea {
-    margin-bottom: 10px;
-    padding: 40px;
+    height: 100px;
 }
 
 button {
     padding: 10px;
+    background-color: purple;
+    color: antiquewhite;
+    font-weight: bold;
 }
 
 footer {
@@ -137,12 +148,13 @@ footer {
         text-align: center;
     }
 
-    input {
+    input, textarea {
         margin-bottom: 5px;
+        width: 275px;
     }
 
     textarea {
-        padding: 30px;
+        height: 80px;
     }
 
     footer {
@@ -179,12 +191,16 @@ footer {
         font-family: "Arial", serif;
     }
 
-    form {
-        text-align: center;
+    input, textarea {
+        width: 250px;
+    }
+
+    textarea {
+        height: 60px;
     }
 
     button {
-        padding: 15px;
+        padding: 12px;
     }
 
     footer {
