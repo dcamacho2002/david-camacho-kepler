@@ -74,7 +74,11 @@ fetch('https://api.github.com/users/dcamacho2002/repos')
 
         for (let i = 0; i < repositories.length; i++) {
             const project = document.createElement("li");
-            project.innerText = repositories[i].name;
+            const link = document.createElement("a");
+            link.href = repositories[i].html_url;
+            link.innerText = repositories[i].name;
+            link.targget = "_blank";
+            project.appendChild(link);
             projectList.appendChild(project);
         }
     })
