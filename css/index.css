@@ -58,7 +58,7 @@ nav {
     margin: 5px;
 }
 
-#skills ul {
+#skills ul, #Projects ul {
     list-style-type: none;
     background-color: mediumslateblue;
     padding: 5px;
@@ -67,7 +67,7 @@ nav {
     justify-content: space-around;
 }
 
-#skills li {
+#skills li, #Projects li {
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -119,6 +119,8 @@ footer {
     padding: 10px;
     font-weight: bold;
 }
+
+
 
 /* Tablet style */
 
