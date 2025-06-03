@@ -1,3 +1,5 @@
+// footer
+
 const f = document.createElement('footer');
 
 document.body.append(f);
@@ -10,9 +12,11 @@ const footer = document.querySelector('footer');
 
 const copyright = document.createElement('p');
 
-copyright.innerHTML = `David Camacho ${thisYear}`;
+copyright.innerHTML = `&copy; David Camacho ${thisYear}`;
 
 footer.appendChild(copyright);
+
+// skills section
 
 const skills = ["Scientific writing", "Statistical analysis", "Time management", "Problem-solving", "Attention to detail"];
 
@@ -27,6 +31,8 @@ for (let i = 0; i < skills.length; i++) {
 
     skillsList.appendChild(skill); 
 }
+
+// leave a message section
 
 const messageForm = document.forms['leave_message'];
 messageForm.addEventListener('submit', function (event) {
@@ -61,7 +67,9 @@ messageForm.addEventListener('submit', function (event) {
 
     messageForm.reset();
 });
- 
+
+// projects section
+
 fetch('https://api.github.com/users/dcamacho2002/repos') 
     .then(function (response) {
         return response.json();
