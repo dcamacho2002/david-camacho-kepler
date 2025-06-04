@@ -35,6 +35,11 @@ for (let i = 0; i < skills.length; i++) {
 // leave a message section
 
 const messageForm = document.forms['leave_message'];
+const messageSection = document.getElementById('messages');
+const messageList = messageSection.querySelector('ul');
+
+messageSection.style.display = "none"; 
+
 messageForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -44,8 +49,6 @@ messageForm.addEventListener('submit', function (event) {
 
     console.log(usersName, usersEmail, usersMessage);
 
-    const messageSection = document.getElementById('messages');
-    const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
 
     newMessage.innerHTML = `
@@ -64,6 +67,8 @@ messageForm.addEventListener('submit', function (event) {
 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
+
+    messageSection.style.display = "block";
 
     messageForm.reset();
 });
